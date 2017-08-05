@@ -1,0 +1,37 @@
+.go-navbar-toggle
+	position: absolute
+	z-index: 999
+	right: 30px
+	top: 30px
+	width: 65px
+	height: 65px
+	padding: 12px
+	padding-left: 15px
+	+gradient(90deg, $color-2, $color-3)
+	color: #fff
+	border-radius: 50%
+	cursor: pointer
+	//box-shadow: 0 20px 20px 0 rgba(157,88,255,.3)
+
+.go-menu
+	+make(6,6,12)
+	height: 100%
+	width: 100%
+	position: fixed
+	right: 0
+	+gradient(90deg, $color-2, $color-3)
+	display: table
+	display: none
+	padding: 30px
+	color: #fff
+	z-index: 99
+	.item-content
+		+center
+		text-align: center
+		.item-menu
+			display: block
+			font-weight: $bold
+			+font-size(60px)
+			letter-spacing: -1px
+			margin: 15px 0px
+			font-family: $font-2

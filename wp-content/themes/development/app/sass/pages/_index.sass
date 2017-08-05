@@ -1,0 +1,48 @@
+$padding: 30px
+
+.go-wrapper
+	height: 100vh
+	+breakpoint($tablet)
+		height: 100vh
+
+.go-profile
+	+make(6,6,12)
+	background-color: $color-1
+	display: table
+	height: 100%
+	padding: $padding
+	color: #fff
+	.item-logo
+		font-weight: bold
+		+font-size(21px)
+		padding-top: 15px
+	.item-content
+		+center
+		width: 100%
+		padding: $padding
+		text-align: left
+		.item-title
+			+font-size(78px)
+			font-weight: bold
+			text-transform: uppercase
+			font-family: $font-1
+			margin-bottom: 15px
+		.item-subtitle
+			+font-size(27px)
+			font-family: $font-2
+			font-weight: $light
+			margin-bottom: 30px
+	.item-footer
+		position: absolute
+		bottom: $padding
+		width: 90%
+		i
+			margin: 0px 20px
+			margin-left: 0px
+			font-size: 18px
+			cursor: pointer
+			+transition(.3s)
+			&:hover
+				color: $color-3
+		+breakpoint($mobile)
+			width: 80%
