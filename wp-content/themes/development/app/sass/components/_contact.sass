@@ -1,0 +1,32 @@
+.go-contact
+	+make(6,6,12)
+	+gradient(90deg, $pink, $orange)
+	display: table
+	height: 100%
+	padding: $padding
+	color: #fff
+	position: fixed
+	left: 0
+	z-index: 1000
+	.item-content
+		+center
+		width: 100%
+		padding: $padding
+		text-align: left
+
+.go-contact-toggle
+	position: fixed
+	z-index: 999
+	left: 30px
+	top: 30px
+	width: 46px
+	height: 46px
+	padding: 8px
+	padding-left: 11px
+	+gradient(90deg, $color-2, $color-3)
+	color: #fff
+	border-radius: 50%
+	cursor: pointer
+
+.nav-hide
+	display: none

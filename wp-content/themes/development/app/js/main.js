@@ -13,19 +13,32 @@ $( document ).ready(function() {
 
 	$(".animation").animateCss('slideInLeft');
 
+	$(".fa").on('mouseover', function(event) {
+		$(this).animateCss('swing');
+	});
+
 	$("#profile-button").on('mouseover', function(event) {
 		$("#button-icon").animateCss('fadeInLeft');
 		console.log("ok");
 	});
 
+	$(".item-menu").animateCss('fadeInRight');
+
 	$("#toggle").on('click', function(event) {
-		$(".go-menu").stop(true, true).animate({width:'toggle'}, 400);
-		$("#toggle").toggleClass('white');
-		$(".item-menu").animateCss('fadeInRight');
+		$(".go-menu").fadeToggle('slow', function() {
+			$(".item-menu").animateCss('fadeInRight');
+		});
 	});
 
 	$(".item-menu").on('mouseover', function(event) {
 		$(this).animateCss('swing');
+	});
+
+	$(".toggle-contact").on('click', function(event) {
+		event.preventDefault();
+		$(".go-contact").fadeToggle('slow', function() {
+			$(".go-contact").removeClass('nav-hide')
+		});
 	});
 
 	$('.owl-projects').owlCarousel({

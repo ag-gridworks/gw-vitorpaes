@@ -3,11 +3,11 @@
 * Post Types
 */
 function create_post_types() {
-    register_post_type( 'diretores',
+    register_post_type( 'projetos',
     array(
       'labels'        => array(
-          'name'          => __( 'Diretores' ),
-          'singular_name' => __( 'Diretor(a)' )
+          'name'          => __( 'Projetos' ),
+          'singular_name' => __( 'Projeto' )
           ),
       'public'        => true,
       'has_archive'   => false,
@@ -15,9 +15,9 @@ function create_post_types() {
       'exclude_from_search' => true,
       'capability_type' => 'post',
       'publicly_queryable' => true,
-      'rewrite'       => array('slug' => 'diretores'),
-      'menu_icon'     => 'dashicons-cart',
-      'supports'      => array( 'title', 'editor', 'thumbnail', 'page-attributes', 'revisions' ),
+      'rewrite'       => array('slug' => 'projetos'),
+      'menu_icon'     => 'dashicons-art',
+      'supports'      => array( 'title', 'thumbnail', 'page-attributes', 'revisions' ),
       )
     );
   
