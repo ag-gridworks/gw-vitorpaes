@@ -1,6 +1,6 @@
 .go-navbar-toggle
 	position: fixed
-	z-index: 999
+	z-index: 9999
 	right: 30px
 	top: 30px
 	width: 46px
@@ -18,9 +18,11 @@
 	font-weight: bold
 	+font-size(28px)
 	left: 30px
-	top: 30px
+	top: 40px
 	z-index: 999
 	color: #fff
+	&:hover
+		color: #fff
 
 .go-menu
 	+make(6,6,12)
@@ -35,7 +37,7 @@
 	display: none
 	padding: 30px
 	color: #fff
-	z-index: 99
+	z-index: 9998
 	.item-content
 		+center
 		text-align: center

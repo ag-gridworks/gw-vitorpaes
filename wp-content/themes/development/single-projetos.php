@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 
+
+
 <div class="go-wrapper">
+
+<?php if(isMobile()): ?>
+<div id="fullpage">
+	<div class="section">
+<?php endif; ?>
 
 <div class="go-project">
 
@@ -25,14 +32,20 @@
 	</div>
 </div>
 
+<?php if(isMobile()): ?>
+	</div>
+<?php endif; ?>
+
 <?php $images = get_field('images') ?>
 
 	<?php if($images): ?>
-		<div id="fullpage">
+		<?php if(!isMobile()): ?>
+			<div id="fullpage">
+		<?php endif ?>
 
 			<?php foreach($images as $image): ?>
 					
-				<div class="section">
+				<div class="section go-project-gallery">
 					
 					<div class="go-project-slider" style="
 					background: url('<?php echo $image['url'] ?>') no-repeat center center;

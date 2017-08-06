@@ -1,6 +1,15 @@
 $( document ).ready(function() {
 	AOS.init();
-	$('#fullpage').fullpage();
+	$('#fullpage').fullpage({
+		navigation: true,
+		navigationPosition: 'right',
+		showActiveTooltip: true,
+		slidesNavigation: true,
+		slidesNavPosition: 'bottom',
+		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+		resetSliders: true,
+		dragAndMove: true
+	});
 
 	$.fn.extend({
     animateCss: function (animationName) {

@@ -2,13 +2,28 @@
 	height: 100vh
 	+breakpoint($tablet)
 		min-height: 100vh
-.owl-project-gallery
+.go-project-gallery
 	+make(6,6,12)
 	padding: 0
 	.go-project-slider
 		height: 100vh
 		background-color: $color-1
 
+#fullpage
+	+make(6,6,12)
+	padding: 0
+
+#fp-nav
+	+gradient(180deg, $color-2, $color-3)
+	border-radius: 5px
+	right: 30px !important
+	bottom: 30px !important
+	top: inherit
+	ul
+		li
+			a
+				span
+					background-color: #fff
 .go-project
 	+make(6,6,12)
 	background-color: $color-1
@@ -35,6 +50,7 @@
 			font-family: $font-2
 			font-weight: $light
 			margin-bottom: 30px
+			text-align: justify
 		.item-job
 			margin-bottom: 30px
 	.item-footer

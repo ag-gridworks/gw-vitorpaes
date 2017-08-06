@@ -2,9 +2,9 @@
 	<i class="fa fa-navicon fa-2x" aria-hidden="true"></i>
 </div>
 
-<div class="go-navbar-logo animation">
+<a href="<?php echo site_url() ?>" class="go-navbar-logo animation">
 	VITOR<span class="light">PAES</span>
-</div>
+</a>
 
 <div class="go-menu">
 	<div id="menu-content" class="item-content">
