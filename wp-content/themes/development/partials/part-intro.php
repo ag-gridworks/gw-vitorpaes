@@ -1,7 +1,4 @@
 <div class="go-profile">
-	<div class="item-logo animation">
-		VITOR<span class="light">PAES</span>
-	</div>
 
 	<div class="item-content">
 		<div class="go-divider animation"></div>

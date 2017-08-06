@@ -1,9 +1,15 @@
 .go-wrapper
 	height: 100vh
 	+breakpoint($tablet)
+		min-height: 100vh
+.owl-project-gallery
+	+make(6,6,12)
+	padding: 0
+	.go-project-slider
 		height: 100vh
+		background-color: $color-1
 
-.go-profile
+.go-project
 	+make(6,6,12)
 	background-color: $color-1
 	display: table
@@ -21,13 +27,15 @@
 			letter-spacing: -1px
 			text-transform: uppercase
 			font-family: $font-1
-			margin-bottom: 15px
+			margin-bottom: 3px
 			+breakpoint($mobile)
 				+font-size(50px)
-		.item-subtitle
-			+font-size(27px)
+		.item-text
+			+font-size(24px)
 			font-family: $font-2
 			font-weight: $light
+			margin-bottom: 30px
+		.item-job
 			margin-bottom: 30px
 	.item-footer
 		position: absolute
